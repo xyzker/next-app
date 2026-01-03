@@ -1,14 +1,9 @@
-const Users = () => {
+const UserDetails = async ( { params }: { params: Promise<{ id: string } >} ) => {
+    const { id } = await params
     return (
         <div>
-            <h1>Dashboard Users</h1>
-            <ul className="mt-10">
-                <li>User 1</li>
-                <li>User 2</li>
-                <li>User 3</li>
-                <li>User 4</li>
-            </ul>
+            <h1>Showing detail of user #{ id }</h1>
         </div>
     )
 }
-export default Users
+export default UserDetails

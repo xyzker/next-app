@@ -1,6 +1,16 @@
-const Analytics = () => {
+import Link from "next/dist/client/link";
+
+const Users = () => {
     return (
-        <div>Analytics</div>
+        <div>
+            <h1>Dashboard Users</h1>
+            <ul className="mt-10">
+                <li><Link href="/dashboard/users/1">User 1</Link></li>
+                <li><Link href="/dashboard/users/2">User 2</Link></li>
+                <li><Link href="/dashboard/users/3">User 3</Link></li>
+                <li><Link href="/dashboard/users/4">User 4</Link></li>
+            </ul>
+        </div>
     )
 }
-export default Analytics
+export default Users
